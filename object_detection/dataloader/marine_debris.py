@@ -71,7 +71,7 @@ class Marine:
         elif split_name == 'val':
             return self.val_images, self.val_annotations
         elif split_name == 'test':
-            images = np.loadtxt('test.txt', dtype='str')
+            images = np.loadtxt('test_set.txt', dtype='str')
             replacer = lambda x: x.replace('/Images/', '/Annotations/')
             ext_changer = lambda x: x.replace('.png', '.xml')
             replacer = np.vectorize(replacer)

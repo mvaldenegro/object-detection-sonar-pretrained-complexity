@@ -27,7 +27,8 @@ setup(
     zip_safe=False,
     entry_points=dict(
         console_scripts=[
-            "marine_debris_detector=object_detection.trainer.train:train",
+            "marine_debris_detector_train="
+            "object_detection.trainer.train:train",
         ]
     ),
     data_files=[],
